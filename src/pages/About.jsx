@@ -1,7 +1,10 @@
 import React from "react";
-import img1 from "../utils/img1.png";
-import img2 from "../utils/img2.png";
-
+import img1 from "../utils/img1.png"
+import icon1 from "../utils/icon1.png";
+import icon2 from "../utils/icon2.png";
+import icon3 from "../utils/icon3.png";
+import icon4 from "../utils/icon4.png";
+import icon5 from "../utils/icon5.png";
 const About = () => {
   return (
     <div className="flex flex-col">
@@ -33,16 +36,33 @@ const About = () => {
           </div>
 
           <div className=" place-content-center w-1/2 ">
-            <img  src={img1} alt="Image of Something " />
+            <img src={img1} alt="Image of Something " />
           </div>
         </div>
       </div>
       {/* section 2 */}
-      <div className="bg-logoBackground">
-        <img src={img2} alt="Logos"/>
+      <div className=" flex  space-x-16  overflow-hidden ">
+       <div className="flex space-x-16 animate-loop-scroll">
+       <img src={icon1} className="max-w-none" alt="Logos" />
+        <img src={icon2}  className="max-w-none"  alt="Logos" />
+        <img src={icon3}  className="max-w-none"  alt="Logos" />
+        <img src={icon4}  className="max-w-none"  alt="Logos" />
+        <img src={icon5}  className="max-w-none"  alt="Logos" />
+       </div>
+       <div className="flex space-x-16 animate-loop-scroll" aria-hidden="true">
+       <img src={icon1}  className="max-w-none"  alt="Logos" />
+        <img src={icon2}  className="max-w-none"  alt="Logos" />
+        <img src={icon3}  className="max-w-none"  alt="Logos" />
+        <img src={icon4}  className="max-w-none"  alt="Logos" />
+        <img src={icon5}  className="max-w-none"  alt="Logos" />
+       </div>
       </div>
       {/* section 3 */}
-      <div>Page3</div>
+      <div className="bg-red-500 w-full h-8 flex justify-center items-center">
+        <div className="bg-white w-1/3 h-1">
+          <div className="bg-green-500"></div>
+        </div>
+      </div>
     </div>
   );
 };

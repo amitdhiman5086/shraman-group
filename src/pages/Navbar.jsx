@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 
 const Navbar = () => {
   return (
-    <div className=" grid grid-cols-12 h-20 shadow-md rounded-md ">
+    <div className=" grid grid-cols-12 h-20 shadow-lg rounded-md ">
       <div className="col-span-2 content-center text-center flex justify-center items-center">
         <div>
           <img src={logo} className="h-10 pb-[12px]" alt="logo" />

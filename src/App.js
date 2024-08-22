@@ -7,7 +7,7 @@ import Navbar from "./pages/Navbar";
 function App() {
   return (
     <div className="flex flex-col h-screen justify-between">
-      <div className="">
+      <div className="sticky top-0 bg-white">
         <Navbar />
       </div>
       <div className="mb-auto">

@@ -10,16 +10,18 @@ module.exports = {
         productBottom: "#0D1C9F",
         button: "#3D63EA",
         logoBackground: "#D9D9D9",
+        lineRight: "#F76680",
+        lineLeft: "#57007B",
       },
       animation: {
-        "loop-scroll": "loop-scroll 50s linear infinite",
+        "loop-scroll": "loop-scroll 20s linear infinite",
       },
       keyframes: {
         "loop-scroll": {
-          from: {
+          "0%": {
             transform: "translateX(0)",
           },
-          to: {
+          "100%": {
             transform: "translateX(-100%)",
           },
         },

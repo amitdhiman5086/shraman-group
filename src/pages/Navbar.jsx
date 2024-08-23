@@ -15,25 +15,14 @@ const Navbar = () => {
         </div>
       </div>
       <div className="col-span-8  text-black content-center flex justify-center ">
-        <ul className=" w-3/4 flex text-[16px] justify-between px-5 items-center font-normal">
+        <ul className=" w-3/4 flex text-[16px] justify-center gap-10 px-5 items-center font-normal">
+          <Link to={""}>
+            {" "}
+            <li className="cursor-pointer hover:text-primary">Businesses</li>
+          </Link>
           <Link to={"/"}>
             {" "}
             <li className="cursor-pointer hover:text-primary">About Us</li>
-          </Link>
-          <Link to={"/servies"}>
-            <li className="cursor-pointer hover:text-primary">Servies</li>
-          </Link>
-          <Link to={"/casestudies"}>
-            <li className="cursor-pointer hover:text-primary">Case Studies</li>
-          </Link>
-          <Link to={"/Blog"}>
-            <li className="cursor-pointer hover:text-primary">Blog</li>
-          </Link>
-          <Link to={"/howitworks"}>
-            <li className="cursor-pointer hover:text-primary">How it Works</li>
-          </Link>
-          <Link to={"/hire"}>
-            <li className="cursor-pointer hover:text-primary">Hire</li>
           </Link>
         </ul>
       </div>

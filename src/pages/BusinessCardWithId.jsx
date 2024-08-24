@@ -22,7 +22,7 @@ const BusinessCardWithId = ({ info }) => {
         </div>
       </div>
       {/* section 2 */}
-      <div className={`w-1/2 relative hover:opacity-50 hover:cursor-pointer ${id % 2 !== 0 ? "flex justify-end" : ""}  `}>
+      <div className={`w-1/2 relative hover:opacity-50 hover:cursor-pointer ${id % 2 !== 0 ? "flex justify-end" : "flex"}  `}>
         <img src={src} className="z-10 hover:z-0 rounded-lg w-[90%] h-[475px]" alt={alt} />
         <Link to={"https://www.google.com/"} className="z-0 w-[90%] absolute h-[475px] text-xl underline flex justify-center bg-gray-300 bg-transparent items-center hover:text-black hover:z-30">View Site</Link>
       </div>

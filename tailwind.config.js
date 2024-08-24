@@ -13,9 +13,14 @@ module.exports = {
         lineRight: "#F76680",
         lineLeft: "#57007B",
       },
+      
       animation: {
         "loop-scroll": "loop-scroll 20s linear infinite",
+        "appear": "appear 5s view() linear",
       },
+      // animation-timeline :{
+      //   "timeline " : "view()",
+      // },
       keyframes: {
         "loop-scroll": {
           "0%": {
@@ -23,6 +28,16 @@ module.exports = {
           },
           "100%": {
             transform: "translateX(-100%)",
+          },
+        },
+        appear: {
+          from: {
+            opacity: "0",
+            scale: "0.5",
+          },
+          to: {
+            opacity: "1",
+            scale: "1",
           },
         },
       },

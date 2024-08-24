@@ -1,3 +1,5 @@
+import Main from "./utils/Main.png";
+import main2 from "./utils/main2.jpg";
 import image1 from "./utils/imagesOfBussines/1.png";
 import image2 from "./utils/imagesOfBussines/2.png";
 import image3 from "./utils/imagesOfBussines/3.png";
@@ -47,3 +49,16 @@ export const images = [
       "Our company is dedicated to advancing societal wellness through a range of impactful initiatives. We focus on providing essential healthcare services, organizing medical camps for socially and economically disadvantaged communities, and delivering educational opportunities to those in need. Additionally, we offer support and care for the elderly, ensuring their well-being and quality of life. By addressing these critical areas, we strive to make a meaningful difference in the lives of individuals and contribute to the overall health and prosperity of society.",
   },
 ];
+
+
+export const data = [
+  {
+    src : Main ,
+    alt : "Image  1"
+
+},
+  {
+    src : main2 ,
+    alt : "Image  2"
+
+},]

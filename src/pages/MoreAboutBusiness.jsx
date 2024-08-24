@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
-import main from "../utils/Main.png";
+import { data } from '../config'
+import { Carousel } from './Carousel'
 import { images } from "../config";
 import BusinessCardWithId from "./BusinessCardWithId";
 
@@ -21,9 +22,12 @@ const MoreAboutBusiness = () => {
   return filter === 0 ? null : (
     <div className="flex flex-col items-center">
       {/* section1 */}
-      <div className=" w-[70%] h-[670px] flex justify-center">
-        <img src={main} alt="Main Image Not Found" />
-      </div>
+  
+     <div className='flex w-full flex-col justify-center items-center'>
+      <Carousel data={data}></Carousel>
+        
+    </div>
+    
       {/* section2 */}
       {filter && <BusinessCardWithId info={filter} />}
 

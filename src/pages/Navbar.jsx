@@ -16,11 +16,11 @@ const Navbar = () => {
       </div>
       <div className="col-span-8  text-black content-center flex justify-center ">
         <ul className=" w-3/4 flex text-[16px] justify-center gap-10 px-5 items-center font-normal">
-          <Link to={""}>
+          <Link to={"/"}>
             {" "}
             <li className="cursor-pointer hover:text-primary">Businesses</li>
           </Link>
-          <Link to={"/"}>
+          <Link to={"/about"}>
             {" "}
             <li className="cursor-pointer hover:text-primary">About Us</li>
           </Link>

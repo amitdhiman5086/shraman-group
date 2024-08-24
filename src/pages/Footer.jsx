@@ -12,7 +12,7 @@ const Footer = () => {
       <div className="w-full h-[450px]  grid grid-cols-10">
         <div className=" col-span-4 flex justify-center mt-11">
           <div className=" w-1/2 h-auto ">
-            <img src={logo} className="h-7  mb-3" alt="logo" />
+            <img src={logo} className="-ml-[10px] w-32 h-14 " alt="logo" />
             <p className="mt-10 font-normal ">
               It is a group of companies, It will try to accomplish the society
               needs, deliver the excellence in service industry & Manage the

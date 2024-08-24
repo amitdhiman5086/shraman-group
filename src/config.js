@@ -1,4 +1,6 @@
 import Main from "./utils/Main.png";
+import person1 from "./utils/person1.png";
+import person2 from "./utils/person2.png";
 import main2 from "./utils/main2.jpg";
 import image1 from "./utils/imagesOfBussines/1.png";
 import image2 from "./utils/imagesOfBussines/2.png";
@@ -50,15 +52,59 @@ export const images = [
   },
 ];
 
-
 export const data = [
   {
-    src : Main ,
-    alt : "Image  1"
-
-},
+    src: Main,
+    alt: "Image  1",
+  },
   {
-    src : main2 ,
-    alt : "Image  2"
+    src: main2,
+    alt: "Image  2",
+  },
+];
 
-},]
+export const teamMember = [
+  {
+    src: person1,
+    name: "Chandra Prakash Ranu",
+  },
+  {
+    src: person2,
+    name: "Minu Srivastava",
+  },
+];
+
+export const ourMission = [
+  {
+    title1: "Our",
+    title2: "Mission",
+    points: [
+      {
+        title: "Company Goals",
+        info: "As India rapidly advances towards a 5 trillion economy, we are committed to contributing to the nation's journey to becoming the world's 3rd largest economy. Our efforts align with the government's vision, driving growth and innovation across industries.",
+      },
+      {
+        title: "Mission",
+        info: "We are dedicated to making our country prosper and shine through hard work and commitment. Our goal is to create a workplace where excellence thrives, making our company the best place to work.",
+      },
+    ],
+  },
+  {
+    title1: "Our",
+    title2: "Vision",
+    points: [
+      {
+        title: "Company Culture",
+        info: "Our company is built on values of integrity, collaboration, and respect, creating a supportive and inclusive work environment. We empower our employees to innovate and grow, ensuring a fulfilling workplace for all.",
+      },
+      {
+        title: "Social Responsibility",
+        info: "Our company upholds its social responsibility by actively contributing to healthcare, education, and the support of the elderly. We are committed to making a positive impact on society, focusing on the well-being of those in need.",
+      },
+      {
+        title: "Future Plans",
+        info: "We aim to launch healthcare initiatives in tier-2 and tier-3 cities, ensuring accessible and affordable services for all levels of society. Our focus is on reaching underserved communities and improving overall health outcomes.",
+      },
+    ],
+  },
+];

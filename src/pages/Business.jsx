@@ -7,9 +7,9 @@ const Business = () => {
       <div className=" w-1/2 ">
         <div className="  h-1 bg-gradient-to-br from-lineLeft to-lineRight "></div>
         <div className=" mt-3 text-center">
-          <h1 className="text-3xl font-light">
+          <h1 className="text-3xl font-bold">
             Businesses we have <br />
-            <sapn className="font-bold text-2xl">Our Business</sapn>
+            <sapn className="font-light text-gray-500 text-2xl">Our Business</sapn>
           </h1>
         </div>
       </div>

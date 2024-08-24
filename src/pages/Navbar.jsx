@@ -7,12 +7,9 @@ const Navbar = () => {
   return (
     <div className=" grid grid-cols-12 h-20 shadow-lg rounded-md ">
       <div className="col-span-2 content-center text-center flex justify-center items-center">
-        <div>
-          <img src={logo} className="h-10 pb-[12px]" alt="logo" />
-        </div>
-        <div>
-          <img src={name} className="h-[26px]" alt="logo" />
-        </div>
+      <div className="-ml-[10px] w-32 h-14 ">
+        <img src={logo} alt="logo not found" />
+      </div>
       </div>
       <div className="col-span-8  text-black content-center flex justify-center ">
         <ul className=" w-3/4 flex text-[16px] justify-center gap-10 px-5 items-center font-normal">

@@ -26,7 +26,7 @@ const BusinessCard = ({ info }) => {
   return (
     <div
       id={`business-card-${id}`}
-      className={`flex ${id % 2 === 0 ? "flex-row-reverse" : ""} items-center w-[70%] p-7 transition-opacity duration-500 ${isVisible ? 'animate-popin opacity-100' : 'opacity-0'}`}
+      className={`flex ${id % 2 === 0 ? "flex-row-reverse" : ""} items-center w-[70%] p-7 transition-opacity duration-500 ${isVisible ? id%2==0 ? "animate-popinRight opacity-100" : "animate-popin opacity-100"  : 'opacity-0'}`}
     >
       {/* section 1 */}
       <div className="w-1/2 text-start flex flex-col gap-y-14">

@@ -6,7 +6,7 @@ const SectionOne = () => {
   return (
     <div className="bg-red-500 flex justify-center">
     <div className="w-full bg-white flex justify-center px-24 py-12">
-      <div className=" place-content-center w-1/2">
+      <div className=" place-content-center w-1/2 animate-popinRight">
         <h1 className="text-[55px]  font-extrabold leading-[71px] mx-2 my-3">
           Shram, Shine{" "}
           <span className="text-[63px] font-extrabold bg-[linear-gradient(to_bottom,_#0D1C9F_0%,_#DE4396_100%)]  bg-clip-text text-transparent leading-[71px]">
@@ -25,7 +25,7 @@ const SectionOne = () => {
         </button>
       </div>
 
-      <div className=" place-content-center w-1/2 ">
+      <div className=" place-content-center w-1/2 animate-popin">
         <img src={img1} alt="Image of Something " />
       </div>
     </div>

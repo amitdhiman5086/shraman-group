@@ -17,7 +17,8 @@ module.exports = {
       animation: {
         "loop-scroll": "loop-scroll 20s linear infinite",
         appear: "appear 5s view() linear",
-        popin: "popin 1s ease-out",
+        popin: "popin 2s ease-out",
+        popinRight: "popinRight 2s ease-out",
       },
       // animation-timeline :{
       //   "timeline " : "view()",
@@ -42,8 +43,12 @@ module.exports = {
           },
         },
         popin: {
-          "0%": { opacity: "0", transform: "scale(0.75)" },
-          "100%": { opacity: "1", transform: "scale(1)" },
+          "0%": { opacity: "0", transform: "translateX(20%)" },
+          "100%": { opacity: "1", transform: "translateX(0)" },
+        },
+        popinRight: {
+          "0%": { opacity: "0", transform: "translateX(-20%)" },
+          "100%": { opacity: "1", transform: "translateX(0)" },
         },
       },
     },

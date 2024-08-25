@@ -235,7 +235,7 @@ const Contact = () => {
           </form>
 
           {/* Contact Icons */}
-          <div className="flex flex-col lg:flex-row justify-between items-center mt-6 space-y-4 lg:space-y-0 lg:space-x-4">
+          <div className="flex flex-col justify-start  md:flex-row md:justify-between  items-start  md:items-center mt-6 space-y-4 lg:space-y-0 lg:space-x-4">
             <div className="flex items-center">
               <div className="text-3xl rounded-2xl mr-2 text-black">
                 <PiPhoneBold />

@@ -46,7 +46,7 @@ const Navbar = () => {
   return (
     <div className="grid grid-cols-12 h-20 shadow-lg rounded-md px-4 sm:px-0">
       <div className="col-span-2 flex justify-center items-center">
-        <div className="w-32 h-14">
+        <div className="w-32 h-14 content-center">
           <Link to={"/"}>
             <img src={logo} alt="logo not found" />
           </Link>

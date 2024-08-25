@@ -5,7 +5,7 @@ const Points = ({ point }) => {
   console.log(point);
   return (
     <div className=" grid grid-cols-12 my-3 ">
-      <div className="col-span-3 font-bold">{title}</div>
+      <div className="col-span-3 font-bold overflow-hidden text-ellipsis mr-2">{title}</div>
       <div className="col-span-9">{info} </div>
     </div>
   );

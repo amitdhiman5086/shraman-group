@@ -32,8 +32,6 @@
 
 // export default BusinessCardWithId;
 
-
-
 import React from "react";
 import { Link } from "react-router-dom";
 
@@ -42,13 +40,17 @@ const BusinessCardWithId = ({ info }) => {
   return (
     <div
       className={`flex flex-col md:flex-row ${
-        id % 2 === 0 ? "md:flex-row-reverse animate-popinRight" : "animate-popin"
+        id % 2 === 0
+          ? "md:flex-row-reverse animate-popinRight"
+          : "animate-popin"
       } items-center w-full md:w-[70%] my-10`}
     >
       {/* Section 1 */}
       <div className="w-full md:w-1/2 text-start flex flex-col gap-y-6 md:gap-y-14 p-4">
         <Link to="https://www.google.com/">
-          <h1 className="font-extrabold text-2xl md:text-3xl">{title}</h1>
+          <h1 className="font-extrabold text-2xl text-blue-500 md:text-black md:text-3xl">
+            {title}
+          </h1>
         </Link>
         <p className="font-light text-sm md:text-base">{information}</p>
         <div className="flex gap-3 items-center">
@@ -72,7 +74,7 @@ const BusinessCardWithId = ({ info }) => {
         />
         <Link
           to="https://www.google.com/"
-          className="z-0 absolute inset-0 text-xl underline flex justify-center items-center bg-transparent hover:text-black hover:z-30"
+          className="opacity-0 md:opacity-100 z-0 absolute inset-0 text-xl underline flex justify-center items-center bg-transparent hover:text-black md:hover:z-30"
         >
           View Site
         </Link>
@@ -82,4 +84,3 @@ const BusinessCardWithId = ({ info }) => {
 };
 
 export default BusinessCardWithId;
-

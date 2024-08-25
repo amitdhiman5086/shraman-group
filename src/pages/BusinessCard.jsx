@@ -81,7 +81,7 @@ const BusinessCard = ({ info }) => {
   return (
     <div
       id={`business-card-${id}`}
-      className={`flex flex-col sm:flex-row ${
+      className={`flex flex-col-reverse sm:flex-row ${
         id % 2 === 0 ? "sm:flex-row-reverse" : ""
       } items-center w-full sm:w-[70%] p-4 sm:p-7 transition-opacity duration-500 ${
         isVisible

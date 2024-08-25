@@ -91,13 +91,17 @@ const Contact = () => {
             <div className="flex justify-between items-center space-x-4">
             <div className="flex items-center">
             <div className="text-3xl rounded-2xl mr-2  text-black"><PiPhoneBold/> </div>
-              <span className="material-icons text-purple-500">Phone</span>
-              <p className="ml-2 text-gray-700">+91 90861 69003</p>
+<div className="flex flex-col justify-start">
+<span className="material-icons text-black">Phone</span>
+<p className="  text-purple-500">+91 90861 69003</p>
+</div>
             </div>
             <div className="flex items-center">
             <div className="text-3xl rounded-2xl mr-2  text-black"><TfiEmail/> </div>
-              <span className="material-icons text-purple-500">Email</span>
-              <p className="ml-2 text-gray-700">chandrap0704@gmail.com</p>
+              <div className="flex flex-col justify-start">
+              <span className="material-icons text-black">Email</span>
+              <p className="  text-purple-500">chandrap0704@gmail.com</p>
+              </div>
             </div>
           </div>
           </form>

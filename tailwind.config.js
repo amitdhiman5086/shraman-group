@@ -17,8 +17,8 @@ module.exports = {
       animation: {
         "loop-scroll": "loop-scroll 20s linear infinite",
         appear: "appear 5s view() linear",
-        popin: "popin 2s ease-out",
-        popinRight: "popinRight 2s ease-out",
+        popin: "popin 2s ease-out ",
+        popinRight: "popinRight 2s ease-out ",
       },
       // animation-timeline :{
       //   "timeline " : "view()",

@@ -98,7 +98,7 @@ const OurVisionMission = ({ data }) => {
       </div>
 
       {/* Part 2 */}
-      <div className="w-[90%] sm:w-[75%] mt-5">
+      <div className="w-[90%] sm:w-[90%] md:justify-start mt-5">
         {points.map((point, index) => (
           <Points key={index} point={point} />
         ))}

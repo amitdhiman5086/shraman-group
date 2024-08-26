@@ -82,9 +82,7 @@ const OurVisionMission = ({ data }) => {
   return (
     <div
       id="vision-mission"
-      className={`flex flex-col mb-7 place-items-center transition-opacity duration-500 ${
-        isVisible ? ' opacity-100' : 'opacity-0'
-      }`}
+      className={`flex flex-col mb-7 place-items-center `}
     >
       {/* Part 1 */}
       <div className="w-[90%] flex-col flex justify-start">

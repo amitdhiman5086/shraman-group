@@ -51,11 +51,11 @@
 
 // export default BusinessCard;
 
-
 import React, { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 
 const BusinessCard = ({ info }) => {
-  const { id, src, alt, information, title, description, img_Link, ceo_Name } =
+  const { id, src, alt, title, description, img_Link, ceo_Name } =
     info;
   const [isVisible, setIsVisible] = useState(false);
 
@@ -84,11 +84,7 @@ const BusinessCard = ({ info }) => {
       className={`flex flex-col-reverse sm:flex-row ${
         id % 2 === 0 ? "sm:flex-row-reverse" : ""
       } items-center w-full sm:w-[70%] p-4 sm:p-7 transition-opacity duration-500 ${
-        isVisible
-          ? id % 2 === 0
-            ? "opacity-100"
-            : "opacity-100"
-          : "opacity-0"
+        isVisible ? (id % 2 === 0 ? "opacity-100" : "opacity-100") : "opacity-0"
       }`}
     >
       {/* section 1 */}
@@ -104,8 +100,31 @@ const BusinessCard = ({ info }) => {
         </div>
       </div>
       {/* section 2 */}
-      <div className="w-full sm:w-1/2 mt-4 sm:mt-0">
-        <img src={src} className="rounded-lg w-full h-auto sm:h-[475px]" alt={alt} />
+      {/* <div className="w-full sm:w-1/2 mt-4 sm:mt-0 hover:overflow-hidden hover:scale-110    relative flex ">
+        <img
+          src={src}
+          className="z-10 hover:z-0  rounded-lg w-full h-auto sm:h-[475px]"
+          alt={alt}
+        />
+         <Link
+          to="https://www.google.com/"
+          className="opacity-0 hover:backdrop-blur-sm hover:rounded-lg  md:opacity-100 z-0 absolute inset-0 text-xl underline flex justify-center items-center bg-transparent hover:text-black md:hover:z-30"
+        >
+          View Site
+        </Link>
+      </div> */}
+      <div className="relative flex w-full md:w-1/2 mt-4 md:mt-0 overflow-hidden hover:scale-105 transition-transform duration-300 ease-in-out">
+        <img
+          src={src}
+          className="z-10 rounded-lg w-full h-auto sm:h-[475px] transition-transform duration-300 ease-in-out"
+          alt={alt}
+        />
+        <Link
+          to="https://www.google.com/"
+          className="opacity-0 hover:opacity-100 hover:backdrop-blur-sm hover:rounded-lg hover:md:opacity-100 z-10 absolute inset-0 text-xl underline flex justify-center items-center bg-transparent hover:text-black transition-opacity duration-300 ease-in-out"
+        >
+          View Site
+        </Link>
       </div>
     </div>
   );

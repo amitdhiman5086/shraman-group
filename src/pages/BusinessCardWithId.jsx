@@ -63,7 +63,7 @@ const BusinessCardWithId = ({ info }) => {
       </div>
       {/* Section 2 */}
       <div
-        className={`w-full md:w-1/2 relative hover:opacity-50 hover:cursor-pointer ${
+        className={`w-full md:w-1/2 relative hover:cursor-pointer ${
           id % 2 !== 0 ? "md:flex justify-end" : "md:flex"
         }`}
       >
@@ -72,12 +72,6 @@ const BusinessCardWithId = ({ info }) => {
           className="z-10 hover:z-0 rounded-lg w-full md:w-[90%] h-[275px] md:h-[475px] object-cover"
           alt={alt}
         />
-        <Link
-          to="https://www.google.com/"
-          className="opacity-0 md:opacity-100 z-0 absolute inset-0 text-xl underline flex justify-center items-center bg-transparent hover:text-black md:hover:z-30"
-        >
-          View Site
-        </Link>
       </div>
     </div>
   );

@@ -263,7 +263,7 @@ const Contact = () => {
             {/* Google Maps Embed */}
             <iframe
               title="map"
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15282225.79979123!2d73.7250245393691!3d20.750301298393563!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30635ff06b92b791%3A0xd78c4fa1854213a6!2sIndia!5e0!3m2!1sen!2sin!4v1587818542745!5m2!1sen!2sin"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3887.349536023535!2d77.73336007578787!3d13.013399213959044!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae11d2281ea5ab%3A0xd5235b1c0fdf298d!2sWhitestone%20Rosario!5e0!3m2!1sen!2sin!4v1724660688464!5m2!1sen!2sin"
               width="100%"
               className="rounded-2xl"
               height="300px"

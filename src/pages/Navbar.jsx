@@ -48,7 +48,7 @@ const Navbar = () => {
       <div className="col-span-2 flex justify-center items-center">
         <div className="w-32 h-14 content-center">
           <Link to={"/"}>
-            <img src={logo} alt="logo not found" />
+            <img src={logo} alt="logo not found" height={60} width={60} />
           </Link>
         </div>
       </div>

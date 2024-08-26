@@ -43,7 +43,7 @@ const SectionOne = () => {
   return (
     <div className="bg-red-500 flex justify-center">
       <div className="w-full bg-white flex flex-col sm:flex-row justify-center px-6 sm:px-24 py-12">
-        <div className="place-content-center w-full sm:w-1/2 animate-popinRight">
+        <div className="place-content-center w-full sm:w-1/2">
           <h1 className="text-3xl sm:text-[55px] font-extrabold leading-[40px] sm:leading-[71px] mx-2 my-3">
             Shram, Shine{" "}
             <span className="text-4xl sm:text-[63px] font-extrabold bg-[linear-gradient(to_bottom,_#0D1C9F_0%,_#DE4396_100%)] bg-clip-text text-transparent leading-[40px] sm:leading-[71px]">
@@ -60,8 +60,8 @@ const SectionOne = () => {
             Let’s get started!
           </button>
         </div>
-        <div className="place-content-center w-full sm:w-1/2 animate-popin mt-6 sm:mt-0">
-          <img src={img1} alt="Image of Something" />
+        <div className="place-content-center w-full sm:w-1/2  mt-6 sm:mt-0">
+          <img src={img1} alt="company home illustration of Something" />
         </div>
       </div>
     </div>

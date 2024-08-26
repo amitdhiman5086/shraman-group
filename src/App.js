@@ -24,25 +24,28 @@
 
 // export default App;
 
-
 import { Outlet } from "react-router-dom";
 import "./App.css";
 import Footer from "./pages/Footer";
 import Navbar from "./pages/Navbar";
+import ScrollToTop from "./components/scrollToTop";
 
 function App() {
   return (
-    <div className="flex w-screen flex-col min-h-screen justify-between">
-      <div className="sticky top-0 z-10 bg-white">
-        <Navbar />
+    <>
+      <ScrollToTop />
+      <div className="flex w-screen flex-col min-h-screen justify-between">
+        <div className="sticky top-0 z-10 bg-white">
+          <Navbar />
+        </div>
+        <div className="mb-auto w-full z-0">
+          <Outlet />
+        </div>
+        <div>
+          <Footer />
+        </div>
       </div>
-      <div className="mb-auto w-full z-0">
-        <Outlet />
-      </div>
-      <div>
-        <Footer />
-      </div>
-    </div>
+    </>
   );
 }
 

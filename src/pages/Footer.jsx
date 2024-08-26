@@ -101,7 +101,7 @@ const Footer = () => {
       <div className="w-full py-10 grid grid-cols-1 sm:grid-cols-10 gap-8">
         <div className="col-span-4 flex justify-center sm:justify-center">
           <div className="w-3/4 sm:w-1/2">
-            <img src={logo} className="w-32 h-14" alt="logo" />
+            <img src={logo} height={60} width={60} alt="logo" />
             <p className="mt-5 sm:mt-10 text-sm font-normal">
               It is a group of companies, It will try to accomplish the society
               needs, deliver the excellence in service industry & manage the
@@ -163,7 +163,7 @@ const Footer = () => {
       <div className="flex flex-col">
         <div className="w-full bg-gray-500 h-[2px]"></div>
         <div className="text-center p-3 text-xs sm:text-sm font-light">
-          © 2024 Copyright by IK Developers. All rights reserved.
+          © 2024 Copyright by Shramam Group. All rights reserved.
         </div>
       </div>
     </div>

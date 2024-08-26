@@ -83,13 +83,13 @@ const OurVisionMission = ({ data }) => {
     <div
       id="vision-mission"
       className={`flex flex-col mb-7 place-items-center transition-opacity duration-500 ${
-        isVisible ? 'animate-popin opacity-100' : 'opacity-0'
+        isVisible ? ' opacity-100' : 'opacity-0'
       }`}
     >
       {/* Part 1 */}
       <div className="w-[90%] flex-col flex justify-start">
         <p className="text-4xl sm:text-6xl text-start font-semibold leading-tight sm:leading-[71px]">
-          {title1}
+          {title1}{" "}
           <span className="bg-gradient-to-b from-primary to-secondary bg-clip-text text-transparent">
             {title2}
           </span>

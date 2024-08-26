@@ -123,7 +123,7 @@ const BusinessCard = ({ info }) => {
           to="https://www.google.com/"
           className="opacity-0 hover:opacity-100 hover:backdrop-blur-sm hover:rounded-lg hover:md:opacity-100 z-10 absolute inset-0 text-xl underline flex justify-center items-center bg-transparent hover:text-black transition-opacity duration-300 ease-in-out"
         >
-          View Site
+          Visit Site
         </Link>
       </div>
     </div>

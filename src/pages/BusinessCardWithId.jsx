@@ -54,7 +54,7 @@ const BusinessCardWithId = ({ info }) => {
         </Link>
         <p className="font-light text-sm md:text-base">{information}</p>
         <div className="flex gap-3 items-center">
-          <img className="w-12 h-12" src={img_Link} alt={alt} />
+          <img className="w-12 rounded-full h-12" src={img_Link} alt={alt} />
           <div className="flex flex-col gap-y-1">
             <h4 className="font-bold text-lg">{ceo_Name}</h4>
             <span className="font-extralight text-sm">CEO</span>

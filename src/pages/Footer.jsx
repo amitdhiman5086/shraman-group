@@ -134,10 +134,9 @@ const Footer = () => {
                   +919108610903
                 </Link>
                 <Link
-                  to={`mailto:Chandra.p0704@gmail.com`}
+                  to={`mailto:support@shramamgroup.com`}
                   className="text-blue-500 hover:underline"
-                >
-                  Chandra.p0704@gmail.com
+                >support@shramamgroup.com
                 </Link>
               </div>
               <div className="mt-5 sm:mt-0">

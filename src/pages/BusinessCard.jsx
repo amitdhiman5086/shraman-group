@@ -92,7 +92,7 @@ const BusinessCard = ({ info }) => {
         <h1 className="font-extrabold text-2xl sm:text-3xl">{title}</h1>
         <p className="font-light text-sm sm:text-base">{description}</p>
         <div className="flex gap-3">
-          <img src={img_Link} alt={alt} className="w-12 h-12" />
+          <img src={img_Link} alt={alt} className="w-12 rounded-full h-12" />
           <div className="flex flex-col gap-y-2">
             <h4 className="font-bold">{ceo_Name}</h4>
             <span className="font-extralight">CEO</span>

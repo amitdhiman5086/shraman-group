@@ -1,6 +1,5 @@
 import Main from "./utils/Main.png";
 import person1 from "./utils/person1.png";
-import person2 from "./utils/person2.png";
 import main2 from "./utils/main2.jpg";
 import image1 from "./utils/imagesOfBussines/1.png";
 import image2 from "./utils/imagesOfBussines/2.png";
@@ -67,11 +66,7 @@ export const teamMember = [
   {
     src: person1,
     name: "Chandra Prakash Ranu",
-  },
-  {
-    src: person2,
-    name: "Minu Srivastava",
-  },
+  }
 ];
 
 export const ourMission = [

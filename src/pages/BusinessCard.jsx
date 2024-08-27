@@ -81,16 +81,16 @@ const BusinessCard = ({ info }) => {
   return (
     <div
       id={`business-card-${id}`}
-      className={`flex flex-col-reverse sm:flex-row ${
-        id % 2 === 0 ? "sm:flex-row-reverse" : ""
-      } items-center w-full sm:w-[70%] p-4 sm:p-7 transition-opacity duration-500 ${
+      className={`flex flex-col-reverse lg:flex-row ${
+        id % 2 === 0 ? "lg:flex-row-reverse" : ""
+      } items-center w-full lg:w-[70%] p-4 lg:p-7 transition-opacity duration-500 ${
         isVisible ? (id % 2 === 0 ? "opacity-100" : "opacity-100") : "opacity-0"
       }`}
     >
       {/* section 1 */}
-      <div className="w-full sm:w-1/2 text-start flex flex-col gap-y-5 sm:gap-y-14 px-8">
-        <h1 className="font-extrabold text-2xl sm:text-3xl">{title}</h1>
-        <p className="font-light text-sm sm:text-base">{description}</p>
+      <div className="w-full lg:w-1/2 text-start flex flex-col gap-y-5 lg:gap-y-14 px-8">
+        <h1 className="font-extrabold text-2xl lg:text-3xl">{title}</h1>
+        <p className="font-light text-sm lg:text-base">{description}</p>
         <div className="flex gap-3">
           <img src={img_Link} alt={alt} className="w-12 rounded-full h-12" />
           <div className="flex flex-col gap-y-2">
@@ -108,20 +108,20 @@ const BusinessCard = ({ info }) => {
         />
          <Link
           to="https://www.google.com/"
-          className="opacity-0 hover:backdrop-blur-sm hover:rounded-lg  md:opacity-100 z-0 absolute inset-0 text-xl underline flex justify-center items-center bg-transparent hover:text-black md:hover:z-30"
+          className="opacity-0 hover:backdrop-blur-sm hover:rounded-lg  lg:opacity-100 z-0 absolute inset-0 text-xl underline flex justify-center items-center bg-transparent hover:text-black lg:hover:z-30"
         >
           View Site
         </Link>
       </div> */}
-      <div className="relative flex w-full md:w-1/2 mt-4 md:mt-0 overflow-hidden hover:scale-105 transition-transform duration-300 ease-in-out">
+      <div className="relative flex w-full lg:w-1/2 mt-4 lg:mt-0 overflow-hidden hover:scale-105 transition-transform duration-300 ease-in-out">
         <img
           src={src}
-          className="z-10 rounded-lg w-full h-auto sm:h-[475px] transition-transform duration-300 ease-in-out"
+          className="z-10 rounded-lg w-full h-auto lg:h-[475px] transition-transform duration-300 ease-in-out"
           alt={alt}
         />
         <Link
           to="https://www.google.com/"
-          className="opacity-0 hover:opacity-100 hover:backdrop-blur-sm hover:rounded-lg hover:md:opacity-100 z-10 absolute inset-0 text-xl underline flex justify-center items-center bg-transparent hover:text-black transition-opacity duration-300 ease-in-out"
+          className="opacity-0 hover:opacity-100 hover:backdrop-blur-sm hover:rounded-lg hover:lg:opacity-100 z-10 absolute inset-0 text-xl underline flex justify-center items-center bg-transparent hover:text-black transition-opacity duration-300 ease-in-out"
         >
           Visit Site
         </Link>

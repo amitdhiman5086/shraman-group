@@ -42,7 +42,7 @@ import { images } from "../config";
 import { Link } from "react-router-dom";
 
 const About = () => {
-  console.log(images);
+  // console.log(images);
   return (
     <div className="flex w-screen flex-col">
       {/* section 1 */}

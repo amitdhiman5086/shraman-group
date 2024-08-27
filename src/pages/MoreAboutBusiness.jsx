@@ -17,7 +17,7 @@ const MoreAboutBusiness = () => {
   };
 
   useEffect(() => {
-    console.log("re-render");
+    // console.log("re-render");
     getFilterData();
   }, [id]);
 

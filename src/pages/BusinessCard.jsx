@@ -116,12 +116,12 @@ const BusinessCard = ({ info }) => {
       <div className="relative  flex w-full lg:w-1/2 mt-4 lg:mt-0 overflow-hidden hover:scale-105 transition-transform duration-300 ease-in-out">
         <img
           src={src}
-          className="z-10  p-[6%] rounded-lg w-full h-full lg:h-[475px] transition-transform duration-300 ease-in-out"
+          className="z-10 lg:p-0 p-[6%] rounded-lg w-full h-full lg:h-[475px] transition-transform duration-300 ease-in-out"
           alt={alt}
         />
         <Link
           to="https://www.google.com/"
-          className="opacity-0 h-[94%] hover:opacity-100 hover:backdrop-blur-sm hover:rounded-lg hover:lg:opacity-100 z-10 absolute inset-0 text-xl underline flex justify-center items-center bg-transparent hover:text-black transition-opacity duration-300 ease-in-out"
+          className="opacity-0 lg:h-full h-[94%] hover:opacity-100 hover:backdrop-blur-sm hover:rounded-lg hover:lg:opacity-100 z-10 absolute inset-0 text-xl underline flex justify-center items-center bg-transparent hover:text-black transition-opacity duration-300 ease-in-out"
         >
           Visit Site
         </Link>

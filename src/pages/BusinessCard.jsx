@@ -91,13 +91,13 @@ const BusinessCard = ({ info }) => {
       <div className="w-full lg:border-0 border-2 my-2 py-2 border-black lg:w-1/2 text-start flex flex-col gap-y-5 lg:gap-y-14 px-8">
         <h1 className="font-extrabold text-2xl lg:text-3xl">{title}</h1>
         <p className="font-light text-sm lg:text-base">{description}</p>
-        <div className="flex gap-3 ">
-          <img src={img_Link} alt={alt} className="w-12  rounded-full h-12" />
-          <div className="flex items-center gap-y-2">
-            <h4 className="font-bold">{ceo_Name}</h4>
+        {/* <div className="flex gap-3 "> */}
+          {/* <img src={img_Link} alt={alt} className="w-12  rounded-full h-12" /> */}
+          {/* <div className="flex items-center gap-y-2"> */}
+            {/* <h4 className="font-bold">{ceo_Name}</h4> */}
             {/* <span className="font-extralight">CEO</span> */}
-          </div>
-        </div>
+          {/* </div> */}
+        {/* </div> */}
       </div>
       {/* section 2 */}
       {/* <div className="w-full sm:w-1/2 mt-4 sm:mt-0 hover:overflow-hidden hover:scale-110    relative flex ">

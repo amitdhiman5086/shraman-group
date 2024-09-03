@@ -134,9 +134,9 @@
 //           aria-hidden="false"
 //           tabindex="0"
 //         />
-     
+
 //           </div>
-       
+
 //         </div>
 //       </div>
 //     </div>
@@ -145,7 +145,7 @@
 
 // export default Contact;
 
-import React, { useRef, useState } from "react";
+import React, { useRef } from "react";
 import { PiPhoneBold } from "react-icons/pi";
 import { TfiEmail } from "react-icons/tfi";
 
@@ -157,13 +157,14 @@ const Contact = () => {
   const messageRef = useRef(null);
 
   // State to store the form data in JSON format
-  const [formData, setFormData] = useState({});
+
 
   // Function to handle form submission
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
 
     // Collecting data from refs
+
     const data = {
       name: nameRef.current.value,
       phone: phoneRef.current.value,
@@ -171,8 +172,24 @@ const Contact = () => {
       message: messageRef.current.value,
     };
 
-    // Storing data in state
-    setFormData(data);
+    const res = await fetch(
+      "https://contact-form-d74ad-default-rtdb.firebaseio.com/Contact.json",
+      {
+        method: "POST",
+        headers: {
+          ContentType: "website/json",
+        },
+        body: JSON.stringify({
+          data,
+        }),
+      }
+    );
+    if (res) {
+      console.log(res);
+      alert("Data Stored!");
+    } else {
+      alert("Something went wrong !");
+    }
 
     // Clear form after submission (optional)
     nameRef.current.value = "";
@@ -199,6 +216,7 @@ const Contact = () => {
                 type="text"
                 placeholder="Contact name"
                 ref={nameRef}
+                required
                 className="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:border-purple-500"
               />
             </div>
@@ -207,12 +225,14 @@ const Contact = () => {
                 type="text"
                 placeholder="Contact Phone"
                 ref={phoneRef}
+                required
                 className="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:border-purple-500"
               />
             </div>
             <div className="mb-4">
               <input
                 type="email"
+                required
                 placeholder="E-mail"
                 ref={emailRef}
                 className="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:border-purple-500"
@@ -221,6 +241,7 @@ const Contact = () => {
             <div className="mb-4">
               <textarea
                 placeholder="Let's talk about your idea"
+                required
                 ref={messageRef}
                 className="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:border-purple-500"
                 rows="4"
@@ -281,4 +302,3 @@ const Contact = () => {
 };
 
 export default Contact;
-

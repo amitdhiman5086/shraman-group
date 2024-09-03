@@ -116,7 +116,7 @@ const BusinessCard = ({ info }) => {
       <div className="relative  flex w-full lg:w-1/2 mt-4 lg:mt-0 overflow-hidden hover:scale-105 transition-transform duration-300 ease-in-out">
         <img
           src={src}
-          className="z-10 lg:p-0 p-[6%] rounded-lg w-full h-full lg:h-[475px] transition-transform duration-300 ease-in-out"
+          className="z-10 lg:p-0 p-[6%] object-cover rounded-lg w-full h-full lg:h-[475px] transition-transform duration-300 ease-in-out"
           alt={alt}
         />
         <Link

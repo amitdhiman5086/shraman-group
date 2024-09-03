@@ -54,7 +54,7 @@ const About = () => {
       <div className="flex flex-col gap-y-10 w-full text-center px-4 sm:px-8">
         {images.map((img) => (
           <Link
-            className="flex justify-center"
+            className="flex  justify-center"
             key={img.id}
             to={"/" + img.id}
           >

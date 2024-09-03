@@ -1,6 +1,13 @@
 import Main from "./utils/Main.png";
 import person1 from "./utils/person1.png";
-import main2 from "./utils/main2.jpg";
+import main2 from "./utils/main2.png";
+import main3 from "./utils/main3.png";
+import main5 from "./utils/main5.png";
+import main9 from "./utils/main9.png";
+import main6 from "./utils/main6.png";
+import main7 from "./utils/main7.png";
+import main8 from "./utils/main8.png";
+import main4 from "./utils/main4.jpeg";
 import image1 from "./utils/imagesOfBussines/1.png";
 import image2 from "./utils/imagesOfBussines/2.png";
 import image3 from "./utils/imagesOfBussines/3.png";
@@ -20,6 +27,20 @@ export const images = [
     ceo_Name: "Chandra Prakash Ranu",
     information:
       "At our company, we excel in providing exceptional services across three critical sectors: Trading, Real Estate Consultancy, and Transportation. Our broad expertise enables us to offer customized solutions that meet the varied needs of our clients across India. In Trading, we utilize our deep industry knowledge to facilitate efficient and profitable transactions. Our team is adept at handling the complexities of the market, ensuring that our clients can seize opportunities and achieve their financial objectives.In Real Estate Consultancy, we deliver insightful guidance and strategic advice, aiding clients in making well-informed decisions within the dynamic property market. Whether it involves buying, selling, or investing, our experts tailor their services to meet the specific needs of each client.Our Transportation services are crafted to provide smooth and dependable logistics and movement solutions across the country. We handle the intricacies of transportation with precision, ensuring the timely and efficient delivery of goods and services.By merging our capabilities in these diverse areas, we offer a comprehensive suite of services that addresses the evolving demands of our clients. Our dedication to excellence and our extensive national presence ensure that we are ideally positioned to deliver reliable solutions throughout India.",
+    data: [
+      {
+        src: Main,
+        alt: "Image  1",
+      },
+      {
+        src: main2,
+        alt: "Image  2",
+      },
+      {
+        src: main9,
+        alt: "Image  3",
+      },
+    ],
   },
   {
     id: 2,
@@ -33,7 +54,21 @@ export const images = [
     img_Link: ceo,
     ceo_Name: "Chandra Prakash Ranu",
     information:
-     "Deeply committed to enhancing societal wellness, we engage in several vital initiatives aimed at improving community health and education. We provide extensive Health Care services and organize medical camps that cater specifically to socially and economically disadvantaged groups, ensuring that crucial medical support is accessible to those most in need. Beyond healthcare, our focus extends to advancing education by offering learning opportunities and resources to underserved communities. Our educational programs are designed to uplift individuals by imparting essential knowledge and skills that can significantly improve their future prospects.Additionally, we prioritize the well-being of elderly individuals through dedicated support services tailored to meet their specific needs and enhance their quality of life. Our initiatives for older adults range from providing basic care to facilitating social engagement, helping them lead more fulfilling lives.By focusing on these key areas—healthcare, education, and elder support—we aim to foster a more equitable and supportive environment. Our comprehensive approach underscores our dedication to making a positive and enduring impact on the lives of those in need, contributing to a healthier, more inclusive community for everyone.",
+      "Deeply committed to enhancing societal wellness, we engage in several vital initiatives aimed at improving community health and education. We provide extensive Health Care services and organize medical camps that cater specifically to socially and economically disadvantaged groups, ensuring that crucial medical support is accessible to those most in need. Beyond healthcare, our focus extends to advancing education by offering learning opportunities and resources to underserved communities. Our educational programs are designed to uplift individuals by imparting essential knowledge and skills that can significantly improve their future prospects.Additionally, we prioritize the well-being of elderly individuals through dedicated support services tailored to meet their specific needs and enhance their quality of life. Our initiatives for older adults range from providing basic care to facilitating social engagement, helping them lead more fulfilling lives.By focusing on these key areas—healthcare, education, and elder support—we aim to foster a more equitable and supportive environment. Our comprehensive approach underscores our dedication to making a positive and enduring impact on the lives of those in need, contributing to a healthier, more inclusive community for everyone.",
+    data: [
+      {
+        src: main3,
+        alt: "Image  1",
+      },
+      {
+        src: main4,
+        alt: "Image  2",
+      },
+      {
+        src: main5,
+        alt: "Image  3",
+      },
+    ],
   },
   {
     id: 3,
@@ -48,18 +83,21 @@ export const images = [
     img_Link: ceo,
     ceo_Name: "Jeewa markram",
     information:
-    "Dedicated to offering a broad spectrum of specialized services, we excel in Software Services, Software Consultancy, and Real Estate Consultancy. Within Software Services, we provide custom software development that is specifically tailored to meet the unique needs of our clients, ensuring that their technological solutions are perfectly aligned with their business objectives. Our Software Consultancy services deliver expert guidance on software strategy, implementation, and optimization, aiding organizations in enhancing their operational efficiency and achieving their digital transformation goals. Beyond our focus on software, we are deeply committed to exceptional Real Estate Consultancy. Our team of experts adeptly navigates the complexities of the property market, providing valuable insights and strategic advice to help clients make informed decisions when buying, selling, or investing in real estate. We ensure comprehensive support for our clients throughout their real estate journey, from the initial consultation to the final transaction. By integrating our expertise across these diverse fields, we offer holistic solutions that meet the unique requirements of each client. Our aim is to provide innovative, reliable, and effective services that drive success across various industries. Our commitment to excellence and client satisfaction is fundamental to our operations, making us a trusted partner for both businesses and individuals.",
-  },
-];
-
-export const data = [
-  {
-    src: Main,
-    alt: "Image  1",
-  },
-  {
-    src: main2,
-    alt: "Image  2",
+      "Dedicated to offering a broad spectrum of specialized services, we excel in Software Services, Software Consultancy, and Real Estate Consultancy. Within Software Services, we provide custom software development that is specifically tailored to meet the unique needs of our clients, ensuring that their technological solutions are perfectly aligned with their business objectives. Our Software Consultancy services deliver expert guidance on software strategy, implementation, and optimization, aiding organizations in enhancing their operational efficiency and achieving their digital transformation goals. Beyond our focus on software, we are deeply committed to exceptional Real Estate Consultancy. Our team of experts adeptly navigates the complexities of the property market, providing valuable insights and strategic advice to help clients make informed decisions when buying, selling, or investing in real estate. We ensure comprehensive support for our clients throughout their real estate journey, from the initial consultation to the final transaction. By integrating our expertise across these diverse fields, we offer holistic solutions that meet the unique requirements of each client. Our aim is to provide innovative, reliable, and effective services that drive success across various industries. Our commitment to excellence and client satisfaction is fundamental to our operations, making us a trusted partner for both businesses and individuals.",
+    data: [
+      {
+        src: main6,
+        alt: "Image  1",
+      },
+      {
+        src: main7,
+        alt: "Image  2",
+      },
+      {
+        src: main8,
+        alt: "Image  3",
+      },
+    ],
   },
 ];
 

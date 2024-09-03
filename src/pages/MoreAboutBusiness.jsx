@@ -4,6 +4,7 @@ import { data } from "../config";
 import { Carousel } from "./Carousel";
 import { images } from "../config";
 import BusinessCardWithId from "./BusinessCardWithId";
+import Error from "./Error";
 
 const MoreAboutBusiness = () => {
   const [mapLocation, setMapLocation] = useState("");
@@ -14,6 +15,7 @@ const MoreAboutBusiness = () => {
     const data = images.filter((img) => img.id == id);
     setFilter(data[0]);
     setMapLocation(data[0]?.location);
+    
   };
 
   useEffect(() => {
@@ -21,12 +23,13 @@ const MoreAboutBusiness = () => {
     getFilterData();
   }, [id]);
 
-  return filter === 0 ? null : (
+  console.log(filter)
+  return filter === null || filter === undefined ? <><Error/></> : (
     <div className="flex flex-col items-center">
       {/* section1 */}
 
       <div className="flex w-full flex-col justify-center items-center">
-        <Carousel data={data}></Carousel>
+       {filter && <Carousel data={filter?.data}></Carousel>}
       </div>
 
       {/* section2 */}

@@ -15,7 +15,8 @@ import ceo from "./utils/imagesOfBussines/ceo.png";
 
 export const images = [
   {
-    id: 1,
+    b_id: "shramam-infra-&-minerals",
+    id : 1,
     src: image1,
     alt: "Image 1 not Found",
     title: "Shramam Infra & Minerals Pvt. Ltd.",
@@ -43,7 +44,8 @@ export const images = [
     ],
   },
   {
-    id: 2,
+    b_id: "shramam-foundation",
+    id : 2 ,
     src: image2,
     alt: "Image 2 not Found",
     title: "Shramam Foundation",
@@ -71,6 +73,7 @@ export const images = [
     ],
   },
   {
+    b_id: "shramam-ventures",
     id: 3,
     src: image3,
     alt: "Image 3 not Found",

@@ -8,28 +8,32 @@ import Error from "./Error";
 
 const MoreAboutBusiness = () => {
   const [mapLocation, setMapLocation] = useState("");
-  const { id } = useParams();
+  const { b_id } = useParams();
   const [filter, setFilter] = useState(null);
+  console.log(b_id);
 
   const getFilterData = () => {
-    const data = images.filter((img) => img.id == id);
+    const data = images.filter((img) => img.b_id == b_id);
     setFilter(data[0]);
     setMapLocation(data[0]?.location);
-    
   };
 
   useEffect(() => {
     // console.log("re-render");
     getFilterData();
-  }, [id]);
+  }, [b_id]);
 
-  console.log(filter)
-  return filter === null || filter === undefined ? <><Error/></> : (
+  console.log(filter);
+  return filter === null || filter === undefined ? (
+    <>
+      <Error />
+    </>
+  ) : (
     <div className="flex flex-col items-center">
       {/* section1 */}
 
       <div className="flex w-full flex-col justify-center items-center">
-       {filter && <Carousel data={filter?.data}></Carousel>}
+        {filter && <Carousel data={filter?.data}></Carousel>}
       </div>
 
       {/* section2 */}

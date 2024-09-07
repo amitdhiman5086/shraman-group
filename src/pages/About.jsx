@@ -56,7 +56,7 @@ const About = () => {
           <Link
             className="flex  justify-center"
             key={img.id}
-            to={"/" + img.id}
+            to={"/" + img.b_id}
           >
             <BusinessCard key={img.id} info={img} />
           </Link>

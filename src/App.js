@@ -35,11 +35,13 @@ function App() {
     <>
       <ScrollToTop />
       <div className="flex w-screen flex-col min-h-screen justify-between">
-        <div className="sticky   top-0 z-10 bg-white">
+        <div className="sticky top-0 z-10 bg-white">
           <Navbar />
         </div>
-        <div className="mb-auto  w-full z-0">
-          <Outlet />
+        <div className="mb-auto w-full z-0 flex justify-center">
+          <div className="max-w-5xl w-full">
+            <Outlet />
+          </div>
         </div>
         <div className="">
           <Footer />

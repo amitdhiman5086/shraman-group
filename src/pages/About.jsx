@@ -44,7 +44,7 @@ import { Link } from "react-router-dom";
 const About = () => {
   // console.log(images);
   return (
-    <div className="flex w-screen flex-col">
+    <div className="flex flex-col w-full">
       {/* section 1 */}
       <SectionOne />
       {/* section 2 */}

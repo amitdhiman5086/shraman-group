@@ -7,12 +7,12 @@ const SectionOne = () => {
         scrollToSection(1000); // Adjust the offset value to scroll to the desired position
       };
   return (
-    <div className="bg-red-500 flex justify-center">
-      <div className="w-full bg-white flex flex-col lg:flex-row justify-center px-6 lg:px-24 py-12">
+    <div className="flex justify-center w-full">
+      <div className="w-full bg-white flex flex-col lg:flex-row justify-center px-6 lg:px-12 py-12">
         <div className="place-content-center w-full lg:w-1/2">
           <h1 className="text-3xl lg:text-[55px] font-extrabold leading-[40px] lg:leading-[71px] mx-2 my-3">
             Shram, Shine{" "}
-            <span className="text-4xl lg:text-[63px] font-extrabold bg-[linear-gradient(to_bottom,_#0D1C9F_0%,_#DE4396_100%)] bg-clip-text text-transparent leading-[40px] lg:leading-[71px]">
+            <span className="text-4xl lg:text-[63px] font-extrabold bg-gradient-to-b from-productBottom to-productTop bg-clip-text text-transparent leading-[40px] lg:leading-[71px]">
               &
             </span>{" "}
             Success

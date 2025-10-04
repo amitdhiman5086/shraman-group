@@ -4,14 +4,14 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        primary: "#6675F7",
-        secondary: "#57007B",
-        productTop: "#DE4396",
-        productBottom: "#0D1C9F",
-        button: "#3D63EA",
-        logoBackground: "#D9D9D9",
-        lineRight: "#F76680",
-        lineLeft: "#57007B",
+        primary: "#4F46E5",
+        secondary: "#7C3AED",
+        productTop: "#EC4899",
+        productBottom: "#3B82F6",
+        button: "#6366F1",
+        logoBackground: "#E5E7EB",
+        lineRight: "#F472B6",
+        lineLeft: "#8B5CF6",
       },
 
       animation: {

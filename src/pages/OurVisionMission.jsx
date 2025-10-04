@@ -92,11 +92,11 @@ const OurVisionMission = ({ data }) => {
             {title2}
           </span>
         </p>
-        <div className="w-full sm:w-[75%] h-1 bg-gray-500 mt-2"></div>
+        <div className="w-full sm:w-[85%] h-1 bg-gray-500 mt-2"></div>
       </div>
 
       {/* Part 2 */}
-      <div className="w-[90%] sm:w-[90%] md:justify-start mt-5">
+      <div className="w-[90%] mt-5">
         {points.map((point, index) => (
           <Points key={index} point={point} />
         ))}

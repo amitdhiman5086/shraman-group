@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
-import { data } from "../config";
 import { Carousel } from "./Carousel";
 import { images } from "../config";
 import BusinessCardWithId from "./BusinessCardWithId";
@@ -12,14 +11,13 @@ const MoreAboutBusiness = () => {
   const [filter, setFilter] = useState(null);
   console.log(b_id);
 
-  const getFilterData = () => {
-    const data = images.filter((img) => img.b_id == b_id);
-    setFilter(data[0]);
-    setMapLocation(data[0]?.location);
-  };
-
   useEffect(() => {
-    // console.log("re-render");
+    const getFilterData = () => {
+      const data = images.filter((img) => img.b_id === b_id);
+      setFilter(data[0]);
+      setMapLocation(data[0]?.location);
+    };
+    
     getFilterData();
   }, [b_id]);
 

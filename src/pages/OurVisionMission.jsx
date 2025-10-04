@@ -53,36 +53,18 @@
 // export default OurVisionMission;
 
 
-import React, { useEffect, useState } from "react";
+import React from "react";
 import Points from "./Points";
 
 const OurVisionMission = ({ data }) => {
   const { title1, title2, points } = data;
-  const [isVisible, setIsVisible] = useState(false);
-
-  const handleScroll = () => {
-    const element = document.getElementById('vision-mission');
-    const rect = element.getBoundingClientRect();
-    if (rect.top < window.innerHeight && rect.bottom >= 0) {
-      setIsVisible(true);
-    } else {
-      setIsVisible(false);
-    }
-  };
-
-  useEffect(() => {
-    window.addEventListener('scroll', handleScroll);
-    handleScroll(); // Check on mount
-
-    return () => {
-      window.removeEventListener('scroll', handleScroll);
-    };
-  }, []);
 
   return (
     <div
       id="vision-mission"
       className={`flex flex-col mb-7 place-items-center `}
+      data-aos="fade-up"
+      data-aos-duration="800"
     >
       {/* Part 1 */}
       <div className="w-[90%] flex-col flex justify-start">

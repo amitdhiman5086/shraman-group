@@ -51,7 +51,7 @@ const SectionAbout = () => {
   return (
     <div>
       {/* Section 1 */}
-      <div className="flex justify-center items-center py-10 sm:py-20">
+      <div className="flex justify-center items-center py-10 sm:py-20" data-aos="fade-down">
         <p className="text-4xl sm:text-6xl text-center font-semibold leading-tight sm:leading-[71px]">
           We’re here to <br />
           <span className="bg-gradient-to-b from-primary to-secondary bg-clip-text text-transparent">
@@ -63,7 +63,7 @@ const SectionAbout = () => {
       {/* Section 2 */}
       <div className="flex flex-col items-center">
         {/* Part 1 */}
-        <div className="w-[90%] sm:w-[70%]  p-6 pt-8 pb-20 rounded-2xl bg-gradient-to-b from-primary to-secondary">
+        <div className="w-[90%] sm:w-[70%]  p-6 pt-8 pb-20 rounded-2xl bg-gradient-to-b from-primary to-secondary shadow-lg hover:shadow-2xl transition-shadow duration-300" data-aos="zoom-in">
           <p className="text-base sm:text-xl font-normal text-white text-center">
             Foundation will work on Health Care, Education & Old age related
             activity; Shramam Ventures will work on Software services & other
@@ -73,7 +73,7 @@ const SectionAbout = () => {
         </div>
 
         {/* Part 2 */}
-        <div className="w-full -mt-10 mb-5 rounded-lg flex justify-center">
+        <div className="w-full -mt-10 mb-5 rounded-lg flex justify-center" data-aos="fade-up">
           <iframe
           title='map'
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3887.349536023535!2d77.73336007578787!3d13.013399213959044!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae11d2281ea5ab%3A0xd5235b1c0fdf298d!2sWhitestone%20Rosario!5e0!3m2!1sen!2sin!4v1724660688464!5m2!1sen!2sin"

@@ -39,7 +39,7 @@ const AboutUs = () => {
     <div className="px-4 sm:px-8">
       <SectionAbout />
 
-      <div className="mt-10">
+      <div className="mt-10" data-aos="fade-up">
         <h2 className="text-4xl sm:text-5xl text-center font-semibold leading-tight sm:leading-[71px] bg-gradient-to-l from-primary to-secondary bg-clip-text text-transparent">
           Our Success Team
         </h2>

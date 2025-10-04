@@ -26,7 +26,7 @@ import React from "react";
 
 const Business = () => {
   return (
-    <div className="mt-8 w-full flex justify-center items-center px-4 sm:px-0">
+    <div className="mt-8 w-full flex justify-center items-center px-4 sm:px-0" data-aos="fade-up">
       <div className="w-full sm:w-1/2">
         <div className="h-1 bg-gradient-to-br from-lineLeft to-lineRight"></div>
         <div className="mt-3 text-center">

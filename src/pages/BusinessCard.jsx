@@ -51,41 +51,21 @@
 
 // export default BusinessCard;
 
-import React, { useEffect, useState } from "react";
+import React from "react";
 import { Link } from "react-router-dom";
 
 const BusinessCard = ({ info }) => {
-  const { id, src, alt, title, description, img_Link, ceo_Name } =
+  const { id, src, alt, title, description } =
     info;
-  const [isVisible, setIsVisible] = useState(false);
-
-  const handleScroll = () => {
-    const element = document.getElementById(`business-card-${id}`);
-    const rect = element.getBoundingClientRect();
-    if (rect.top < window.innerHeight && rect.bottom >= 0) {
-      setIsVisible(true);
-    } else {
-      setIsVisible(false);
-    }
-  };
-
-  useEffect(() => {
-    window.addEventListener("scroll", handleScroll);
-    handleScroll(); // Check on mount
-
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  });
 
   return (
     <div
       id={`business-card-${id}`}
+      data-aos={id % 2 === 0 ? "fade-left" : "fade-right"}
+      data-aos-duration="800"
       className={`flex flex-col-reverse lg:flex-row ${
         id % 2 === 0 ? "lg:flex-row-reverse" : ""
-      } items-center w-full lg:w-[70%] p-4 lg:p-7 transition-opacity duration-500 ${
-        isVisible ? (id % 2 === 0 ? "opacity-100" : "opacity-100") : "opacity-0"
-      }`}
+      } items-center w-full lg:w-[70%] p-4 lg:p-7`}
     >
       {/* section 1 */}
       <div className="w-full lg:border-0 border-2 my-2 py-2 border-black lg:w-1/2 text-start flex flex-col gap-y-5 lg:gap-y-14 px-8">
